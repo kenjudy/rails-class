@@ -1,0 +1,6 @@
+if [ "$TM_PROJECT_DIRECTORY" ]; then
+  PROJDIR=$TM_PROJECT_DIRECTORY
+else
+  PROJDIR=$PWD
+fi
+rvm use ruby-`cat $PROJDIR/.ruby-version`@railsbridge --create
